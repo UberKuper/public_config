@@ -57,10 +57,10 @@ channels:
 
 # Пример данных для форума
 forums:
-  preDevTonForum:
+  preDevForum:
     id: -1002211760998
     topics_id: 2211760998
-    title: "Pre Dev TON Forum"
+    title: "Pre Dev Forum"
     is_forum: true
     topics:
       general:
@@ -109,10 +109,10 @@ forums:
         threadId: 15
         title: "Forum News"
   
-  devTonForum:
+  devForum:
     id: -1002369099316
     topics_id: 2369099316
-    title: "Dev TON Forum"
+    title: "Dev Forum"
     is_forum: true
     topics:
       general:
@@ -269,8 +269,8 @@ forums:
 
 # Маппинг веток
 branch_mapping:
-  # Соответствия между ветками для devTonForum и preProdTonForum
-  devTonForum_to_preProdTonForum:
+  # Соответствия между ветками для devForum и preProdTonForum
+  devForum_to_preProdTonForum:
     general: general
     officialEn: officialEn
     officialRu: officialRu
