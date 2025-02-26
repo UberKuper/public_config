@@ -1,61 +1,60 @@
-# Переключатель среды
-environment: dev  # Или 'prod'
+# Manifest v1.1
 
-# Манифест для каналов
+environment: dev
+
 channels:
   - title: TON Community
     username: toncoin
-    id: 
-      dev: !!str "-1002369099316"   # Используется из devTonForum
-      prod: !!str "-1231233043722"  # Используется из prodTonForum
-    threadId: 
-      dev: !!str "officialEn" 
+    id:
+      dev: !!str "-1002369099316"
+      prod: !!str "-1231233043722"
+    threadId:
+      dev: !!str "officialEn"
       prod: !!str "officialEn"
 
   - title: Crypto News
     username: cryptonews
-    id: 
-      dev: !!str "-100234567890"  # Используется из devTonForum
-      prod: !!str "-100345678901"  # Используется из prodTonForum
-    threadId: 
-      dev: !!str "buildersEn" 
+    id:
+      dev: !!str "-100234567890"
+      prod: !!str "-100345678901"
+    threadId:
+      dev: !!str "buildersEn"
       prod: !!str "buildersEn"
 
   - title: Developers Hub
-    id: 
-      dev: !!str "-100345678901"  # Используется из devTonForum
-      prod: !!str "-100456789012"  # Используется из prodTonForum
+    id:
+      dev: !!str "-100345678901"
+      prod: !!str "-100456789012"
     threadId:
-      dev: !!str "buildersRu" 
+      dev: !!str "buildersRu"
       prod: !!str "buildersRu"
 
   - title: Large KOL [EN] Community
     username: largekol_en
-    id: 
-      dev: !!str "-100456789012"  # Используется из devTonForum
-      prod: !!str "-100567890123"  # Используется из prodTonForum
+    id:
+      dev: !!str "-100456789012"
+      prod: !!str "-100567890123"
     threadId:
-      dev: !!str "largeKolEn" 
+      dev: !!str "largeKolEn"
       prod: !!str "largeKolEn"
 
   - title: KOL [RU] Enthusiasts
     username: kolru_community
-    id: 
-      dev: !!str "-100567890123"  # Используется из devTonForum
-      prod: !!str "-100678901234"  # Используется из prodTonForum
+    id:
+      dev: !!str "-100567890123"
+      prod: !!str "-100678901234"
     threadId:
-      dev: !!str "kolRu" 
+      dev: !!str "kolRu"
       prod: !!str "kolRu"
 
   - title: Projects [EN] Forum
-    id: 
-      dev: !!str "-100678901234"  # Используется из devTonForum
-      prod: !!str "-100789012345"  # Используется из prodTonForum
+    id:
+      dev: !!str "-100678901234"
+      prod: !!str "-100789012345"
     threadId:
-      dev: !!str "projectsEn" 
+      dev: !!str "projectsEn"
       prod: !!str "projectsEn"
 
-# Пример данных для форума
 forums:
   preDevForum:
     id: -1002211760998
@@ -160,116 +159,8 @@ forums:
       forumNews:
         threadId: 126
         title: "Forum News"
-  
-  preProdTonForum:
-    id: -1002428720070
-    topics_id: 2428720070
-    title: "PreProd TON Forum"
-    is_forum: true
-    topics:
-      general:
-        threadId: 1
-        title: "General"
-      officialEn:
-        threadId: 2
-        title: "Official [EN]"
-      officialRu:
-        threadId: 3
-        title: "Official [RU]"
-      buildersEn:
-        threadId: 6
-        title: "Builders [EN]"
-      buildersRu:
-        threadId: 7
-        title: "Builders [RU]"
-      largeKolEn:
-        threadId: 12
-        title: "Large KOL [EN]"
-      largeKolRu:
-        threadId: 15
-        title: "Large KOL [RU]"
-      projectsEn:
-        threadId: 22
-        title: "Projects [EN]"
-      projectsRu:
-        threadId: 21
-        title: "Projects [RU]"
-      kolEn:
-        threadId: 13
-        title: "KOL [EN]"
-      kolRu:
-        threadId: 20
-        title: "KOL [RU]"
-      externalSources:
-        threadId: 20
-        title: "External Sources"
-      enChat:
-        threadId: 23
-        title: "EN Chat"
-      ruChat:
-        threadId: 23
-        title: "RU Chat"
-      forumNews:
-        threadId: 32
-        title: "Forum News"
-  
-  prodTonForum:
-    id: -1002348899468
-    topics_id: 2348899468
-    title: "The Open Network Forum"
-    is_forum: true
-    topics:
-      general:
-        threadId: 1
-        title: "General"
-      officialEn:
-        threadId: 2
-        title: "Official [EN]"
-      officialRu:
-        threadId: 3
-        title: "Official [RU]"
-      buildersEn:
-        threadId: 4
-        title: "Builders [EN]"
-      buildersRu:
-        threadId: 5
-        title: "Builders [RU]"
-      largeKolEn:
-        threadId: 6
-        title: "Large KOL [EN]"
-      largeKolRu:
-        threadId: 7
-        title: "Large KOL [RU]"
-      projectsEn:
-        threadId: 8
-        title: "Projects [EN]"
-      projectsRu:
-        threadId: 9
-        title: "Projects [RU]"
-      kolEn:
-        threadId: 10
-        title: "KOL [EN]"
-      kolRu:
-        threadId: 11
-        title: "KOL [RU]"
-      externalSources:
-        threadId: 12
-        title: "External Sources"
-      enChat:
-        threadId: 13
-        title: "EN Chat"
-      ruChat:
-        threadId: 14
-        title: "RU Chat"
-      forumNews:
-        threadId: 15
-        title: "Forum News"
 
-
-
-# Маппинг веток
 branch_mapping:
-  # Соответствия между ветками для devForum и preProdTonForum
   devForum_to_preProdTonForum:
     general: general
     officialEn: officialEn
@@ -286,7 +177,6 @@ branch_mapping:
     enChat: enChat
     ruChat: ruChat
 
-  # Соответствия между ветками для prodTonForum и preProdTonForum
   prodTonForum_to_preProdTonForum:
     general: general
     officialEn: officialEn
