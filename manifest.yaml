@@ -1,5 +1,6 @@
-# Manifest v1.1
+# Manifest v1.2
 
+version: 1.2
 environment: dev
 
 channels:
